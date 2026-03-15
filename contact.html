@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Learnatic Institute</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Contact Page CSS -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+        <div class="announcement-container">
+            <div class="announcement-content">
+                <i class="fas fa-bullhorn"></i>
+                <div class="announcement-text">
+                    <span class="announcement-item">🎓 New Batch Starting Soon - Enroll Now & Get 20% Discount!</span>
+                    <span class="announcement-item">📚 Free Demo Classes Available - Book Your Seat Today!</span>
+                    <span class="announcement-item">🏆 5000+ Students Placed in Top Companies</span>
+                </div>
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Learnatic Institute</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="admission.html" class="enroll-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> 
+                <span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-cards">
+        <div class="container">
+            <div class="info-cards-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel: +92 319 6659 211">+92 319 6659 211</a></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@learnatic.com">info@learnatic.com</a></p>
+                    <p><a href="mailto:admissions@learnatic.com">admissions@learnatic.com</a></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>R-39 sector 5c/2 next to hbl bank </p>
+                    <p>Near Karachi mobile baramarket North Karachi</p>
+                      <p>Karachi,Pakistan.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Mon - Sat: 10:00 AM - 9:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Left Side: Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question? Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="9876543210">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Course *</label>
+                                <input type="text" id="subject" placeholder="What is this about?" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I agree to the <a href="#">privacy policy</a> and consent to being contacted.</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                
+                <!-- Right Side: Map -->
+                <div class="map-container">
+                    <h2>Find Us Here</h2>
+                    <div class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2233913121413!2d77.40531511508236!3d28.508912782470285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce626851f7009%3A0x621185133cfd1ad1!2sSector%2062%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1647852345678!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Quick Directions -->
+                    <div class="directions-box">
+                        <h3><i class="fas fa-directions"></i> How to Reach Us</h3>
+                        <div class="direction-options">
+                            <div class="direction">
+                                <i class="fas fa-subway"></i>
+                                <span>Nearest Metro: Sector 62 Metro Station (5 min walk)</span>
+                            </div>
+                            <div class="direction">
+                                <i class="fas fa-bus"></i>
+                                <span>Bus Stop: Sector 62 Market (2 min walk)</span>
+                            </div>
+                            <div class="direction">
+                                <i class="fas fa-taxi"></i>
+                                <span>Cab/Auto readily available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multiple Locations (Optional) -->
+    <section class="locations-section">
+        <div class="container">
+            <h2 class="section-title">Our <span>Branches</span></h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-header">
+                        <i class="fas fa-map-pin"></i>
+                        <h3>Noida Head Office</h3>
+                    </div>
+                    <p><i class="fas fa-map-marker-alt"></i>  <p>R-39 sector 5c/2 next to hbl bank </p>
+                    <p>Near Karachi mobile baramarket North Karachi</p>
+                      <p>Karachi,Pakistan.</p></p>
+                    <p><i class="fas fa-phone"></i> +92 319 6659 211</p>
+                    <p><i class="fas fa-envelope"></i> Karachi@learnatic.com</p>
+                    <a href="https://maps.app.goo.gl/M6ZSt5iQXRUW13Mr9" target="_blank" class="location-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="location-card">
+                    <div class="location-header">
+                        <i class="fas fa-map-pin"></i>
+                        <h3>North Karachi</h3>
+                    </div>
+                    <p><i class="fas fa-map-marker-alt"></i> 45, Rajendra Place, New Delhi - 110008</p>
+                    <p><i class="fas fa-phone"></i> +92 319 6659 211</p>
+                    <p><i class="fas fa-envelope"></i> Nk@learnatic.com</p>
+                    <a href="https://maps.google.com" target="_blank" class="location-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="location-card">
+                    <div class="location-header">
+                        <i class="fas fa-map-pin"></i>
+                        <h3>Gurgaon Center</h3>
+                    </div>
+                    <p><i class="fas fa-map-marker-alt"></i> 78, Cyber City, Sector 29, Gurgaon</p>
+                    <p><i class="fas fa-phone"></i> +92 319 6659 211</p>
+                    <p><i class="fas fa-envelope"></i> gurgaon@learnatic.com</p>
+                    <a href="https://maps.google.com" target="_blank" class="location-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Connect -->
+    <section class="social-connect">
+        <div class="container">
+            <h2 class="section-title">Connect With <span>Us</span></h2>
+            <div class="social-grid">
+                <a href="#" class="social-card facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-card youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="#" class="social-card linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="social-card twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-card whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Optional) -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What are your admission hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our admission office is open Monday to Saturday from 9:00 AM to 7:00 PM. You can visit us anytime during these hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you offer online classes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer both online and offline classes. You can choose as per your preference.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How can I get a free demo class?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can call us or fill the contact form to book a free demo class. We'll schedule it at your convenience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What is the response time for queries?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond to all queries within 24 hours on working days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>About Institute</h3>
+                <p>Learnatic Institute provides quality computer and language education since 2010. We have trained 5000+ successful students.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="courses/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="courses/ecommerce.html">E-commerce</a></li>
+                    <li><a href="courses/trading.html">Trading</a></li>
+                    <li><a href="courses/web-development.html">Web Development</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@learnatic.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Noida, India</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Learnatic Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact Form Submission
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for contacting us! We will get back to you soon.');
+            this.reset();
+        });
+
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+            
+            const icon = element.querySelector('i');
+            if (faqItem.classList.contains('active')) {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
+</body>
+</html>

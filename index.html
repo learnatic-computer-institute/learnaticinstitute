@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnatic Institute - Computer & Language Coaching</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Top Announcement Bar -->
+<div class="top-announcement">
+    <div class="announcement-container">
+        <div class="announcement-content">
+            <i class="fas fa-bullhorn"></i>
+            <div class="announcement-text">
+                <span class="announcement-item">🎓 New Batch Starting Soon - Enroll Now & Get 20% Discount!</span>
+                <span class="announcement-item">📚 Free Demo Classes Available - Book Your Seat Today!</span>
+                <span class="announcement-item">🏆 5000+ Students Placed in Top Companies</span>
+                <span class="announcement-item">⏰ Early Bird Offer: Valid Till 31st March 2026</span>
+                <span class="announcement-item">💻 New Course: Data Science with AI - Limited Seats!</span>
+                <span class="announcement-item">🌍 English Speaking Batch Starting Every Monday</span>
+            </div>
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+    </div>
+</div>
+    <!-- Navbar - White, Detached Look with Enroll Button -->
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a href="#" class="logo">Learnatic Institute</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#enroll" class="enroll-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section - Navy Blue -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Learnatic Institute</h1>
+            <p>Your Gateway to Computer & Language Excellence</p>
+            <p>Professional training with expert trainers and modern facilities</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Explore Course</a>
+                <a href="#" class="btn btn-outline">All Courses</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37480.jpg" alt="Student Learning">
+        </div>
+    </section>
+
+    <!-- Popular Courses 2026 - 3 Cards with Images -->
+    <section class="section section-white">
+        <h2 class="section-title">Popular Courses 2026</h2>
+        <div class="cards-container">
+            <!-- Left Small Card -->
+             <a href="courses/digital-marketing.html" >
+            <div class="card small-card" > 
+                <div class="card-image">
+                    <img src="https://img.freepik.com/free-vector/digital-marketing-concept_23-2148748772.jpg" alt="Digital Marketing">
+                </div>
+                <div class="card-content">
+                    <h3>Digital Marketing</h3>
+                    <p>SEO, Social Media, Google Ads & More</p>
+                </div>
+            </div></a>
+            
+            <!-- Middle Large Card -->
+              <a href="courses/ecommerce.html" class="card large-card">
+            <div class="card large-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/free-vector/ecommerce-web-page-concept_52683-25658.jpg" alt="E-commerce">
+                </div>
+                <div class="card-content">
+                    <h3>E-commerce</h3>
+                    <p>Amazon, Daraz, Shopify Store Management</p>
+                </div>
+            </div></a>
+            
+            <!-- Right Small Card -->
+             <a href="courses/trading.html" class="card small-card">
+            <div class="card small-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/free-vector/trading-concept-illustration_114360-1557.jpg" alt="Trading">
+                </div>
+                <div class="card-content">
+                    <h3>Trading Course</h3>
+                    <p>Forex, Stocks, Crypto Trading</p>
+                </div>
+            </div>
+        </div></a>
+    </section>
+
+    <!-- Why Choose Us - Navy Blue with 4 Rows -->
+    <section class="section-navy">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="why-choose-wrapper">
+            <div class="why-choose-left">
+                <img src="https://img.freepik.com/free-vector/students-studying-online_52683-62417.jpg" alt="Why Choose Us">
+            </div>
+            <div class="why-choose-right">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h4>Expert Trainers</h4>
+                        <p>5+ years experienced teachers</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Modern Lab</h4>
+                        <p>Latest computers & equipment</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Flexible Timing</h4>
+                        <p>Morning & Evening batches</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Job Assistance</h4>
+                        <p>100% placement support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Courses - Horizontal Carousels -->
+    <section class="section section-white" id="courses">
+        <h2 class="section-title">Our Courses</h2>
+        
+        <!-- Computer Courses Carousel -->
+        <div class="carousel-section">
+            <h3 class="carousel-title">💻 Computer Courses</h3>
+            <div class="carousel-container">
+                <div class="carousel-btn" onclick="scrollCarousel('computerCarousel', -300)">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="carousel-track" id="computerCarousel">
+                    <!-- Computer Course Cards -->
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/basic-computer-training-concept_23-2148658221.jpg" alt="Basic Computer">
+                        </div>
+                        <div class="card-content">
+                            <h3>Basic Computer Course</h3>
+                            <p>Computer fundamentals, typing, internet</p>
+                            <span class="course-badge">Beginner Friendly</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/office-concept-illustration_114360-1472.jpg" alt="MS Office">
+                        </div>
+                        <div class="card-content">
+                            <h3>MS Office</h3>
+                            <p>Word, Excel, PowerPoint, Outlook</p>
+                            <span class="course-badge">Professional</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/graphic-designer-workplace_23-2148170604.jpg" alt="Graphic Design">
+                        </div>
+                        <div class="card-content">
+                            <h3>Graphic Design</h3>
+                            <p>Photoshop, Illustrator, CorelDRAW</p>
+                            <span class="course-badge">Creative</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg" alt="Web Development">
+                        </div>
+                        <div class="card-content">
+                            <h3>Web Development</h3>
+                            <p>HTML, CSS, JavaScript, PHP</p>
+                            <span class="course-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/digital-marketing-concept_23-2148748772.jpg" alt="Digital Marketing">
+                        </div>
+                        <div class="card-content">
+                            <h3>Digital Marketing</h3>
+                            <p>SEO, Social Media, Google Ads</p>
+                            <span class="course-badge">Trending</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg" alt="Programming">
+                        </div>
+                        <div class="card-content">
+                            <h3>Programming</h3>
+                            <p>Python, C++, Java</p>
+                            <span class="course-badge">Coding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-btn" onclick="scrollCarousel('computerCarousel', 300)">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Language Courses Carousel -->
+        <div class="carousel-section">
+            <h3 class="carousel-title">🌍 Language Courses</h3>
+            <div class="carousel-container">
+                <div class="carousel-btn" onclick="scrollCarousel('languageCarousel', -300)">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="carousel-track" id="languageCarousel">
+                    <!-- Language Course Cards -->
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/english-book-concept_23-2148698368.jpg" alt="English">
+                        </div>
+                        <div class="card-content">
+                            <h3>English Language</h3>
+                            <p>Grammar, speaking, writing skills</p>
+                            <span class="course-badge">Basic to Advanced</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/ielts-exam-concept_23-2148653287.jpg" alt="IELTS">
+                        </div>
+                        <div class="card-content">
+                            <h3>IELTS Preparation</h3>
+                            <p>Band 7+ guaranteed</p>
+                            <span class="course-badge">Exam Prep</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/flat-arabic-islamic-ornament_23-2148900953.jpg" alt="Arabic">
+                        </div>
+                        <div class="card-content">
+                            <h3>Arabic Language</h3>
+                            <p>Speaking, reading, writing</p>
+                            <span class="course-badge">Foreign Language</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/germany-country-sketch_1284-2513.jpg" alt="German">
+                        </div>
+                        <div class="card-content">
+                            <h3>German Language</h3>
+                            <p>A1 to C2 Level</p>
+                            <span class="course-badge">European</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/chinese-new-year-background_23-2148230394.jpg" alt="Chinese">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chinese Language</h3>
+                            <p>Mandarin, HSK Preparation</p>
+                            <span class="course-badge">Asian</span>
+                        </div>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-vector/france-symbols_1284-2521.jpg" alt="French">
+                        </div>
+                        <div class="card-content">
+                            <h3>French Language</h3>
+                            <p>DELF, DALF Preparation</p>
+                            <span class="course-badge">European</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-btn" onclick="scrollCarousel('languageCarousel', 300)">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials - Navy Blue -->
+    <section class="section-navy">
+        <h2 class="section-title">What Our Students Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Student">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Best institute for computer courses. Teachers are very supportive!"</p>
+                <h4>Rahul Kumar</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Student">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"My English speaking improved a lot. Thank you Learnatic Institute!"</p>
+                <h4>Priya Sharma</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Student">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Great environment and modern computer lab. Highly recommended!"</p>
+                <h4>Amit Patel</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Admission Button -->
+    <div class="quick-admission">
+        <a href="#" class="admission-btn">🎓 Quick Admission 2026</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>About Institute</h3>
+                <p>Learnatic Institute provides quality computer and language education since 2010. We have trained 5000+ successful students.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="#">Computer Courses</a></li>
+                    <li><a href="#">Language Courses</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">IELTS Preparation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@learnatic.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Learnatic Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

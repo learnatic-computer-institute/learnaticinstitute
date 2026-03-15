@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Learnatic Institute</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- About Page CSS -->
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+<div class="top-announcement">
+    <div class="announcement-container">
+        <div class="announcement-content">
+            <i class="fas fa-bullhorn"></i>
+            <div class="announcement-text">
+                <span class="announcement-item">🎓 New Batch Starting Soon - Enroll Now & Get 20% Discount!</span>
+                <span class="announcement-item">📚 Free Demo Classes Available - Book Your Seat Today!</span>
+                <span class="announcement-item">🏆 5000+ Students Placed in Top Companies</span>
+                <span class="announcement-item">⏰ Early Bird Offer: Valid Till 31st March 2026</span>
+                <span class="announcement-item">💻 New Course: Data Science with AI - Limited Seats!</span>
+                <span class="announcement-item">🌍 English Speaking Batch Starting Every Monday</span>
+            </div>
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+    </div>
+</div>
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Learnatic Institute</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="index.html#trainers">Trainers</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="admission.html" class="enroll-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> 
+                <span>About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Intro Section -->
+    <section class="about-intro">
+        <div class="container">
+            <div class="intro-wrapper">
+                <div class="intro-image">
+                    <img src="https://img.freepik.com/free-vector/students-studying-online_52683-62417.jpg" alt="About Learnatic Institute">
+                    <div class="experience-badge">
+                        <span class="years">15+</span>
+                        <span class="text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="intro-content">
+                    <h2>Welcome to <span>Learnatic Institute</span></h2>
+                    <h3>Your Gateway to Computer & Language Excellence Since 2010</h3>
+                    <p>Learnatic Institute was established in 2010 with a mission to provide quality education in computer and language skills. Over the past 15+ years, we have trained more than 5000+ students and helped them build successful careers.</p>
+                    <p>We believe in practical, hands-on training that prepares our students for real-world challenges. Our expert trainers, modern lab facilities, and industry-relevant curriculum make us the preferred choice for students in Delhi NCR.</p>
+                    
+                    <div class="intro-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ISO Certified Institute</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Government Registered</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Placement Assistance</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Affordable Fees</span>
+                        </div>
+                    </div>
+                    
+                    <a href="courses.html" class="btn-primary">Explore Our Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>5000+</h3>
+                    <p>Students Trained</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>15+</h3>
+                    <p>Expert Trainers</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>25+</h3>
+                    <p>Courses Offered</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>100%</h3>
+                    <p>Placement Support</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>15+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-smile"></i>
+                    <h3>95%</h3>
+                    <p>Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-wrapper">
+                <div class="mission-box">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide quality education that empowers students with practical skills and knowledge, making them industry-ready and helping them achieve their career goals.</p>
+                </div>
+                <div class="vision-box">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become the leading training institute in India, known for excellence in computer and language education, and to create a community of skilled professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Message -->
+    <section class="founder-section">
+        <div class="container">
+            <div class="founder-wrapper">
+                <div class="founder-image">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Founder & Director">
+                </div>
+                <div class="founder-message">
+                    <h2>Message from <span>Founder & Director</span></h2>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="message">At Learnatic Institute, we believe that education is not just about learning theories, but about gaining practical skills that help you succeed in life. Our journey started in 2010 with just 10 students and a small classroom. Today, we have trained over 5000 students and have a state-of-the-art facility with multiple labs.</p>
+                    <p class="message">I am proud of our team of expert trainers who work tirelessly to ensure every student gets individual attention. Our success is measured by the success of our students, many of whom are now working in top companies or running their own businesses.</p>
+                    <p class="message">I invite you to join our family and start your journey towards a brighter future.</p>
+                    <div class="founder-name">
+                        <h4>Syed Humaiz Jaffri</h4>
+                        <p>Founder & Director, Learnatic Institute</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (Enhanced) -->
+    <section class="why-choose-enhanced">
+        <div class="container">
+            <h2 class="section-title">Why <span>Choose Us</span></h2>
+            <div class="features-enhanced-grid">
+                <div class="feature-enhanced">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Trainers</h3>
+                    <p>Our trainers have 5-10 years of industry experience and are certified professionals.</p>
+                </div>
+                <div class="feature-enhanced">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Modern Lab</h3>
+                    <p>Fully equipped computer lab with latest software and high-speed internet.</p>
+                </div>
+                <div class="feature-enhanced">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Timing</h3>
+                    <p>Morning, evening and weekend batches to suit your schedule.</p>
+                </div>
+                <div class="feature-enhanced">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Job Assistance</h3>
+                    <p>100% placement support with interview preparation and resume building.</p>
+                </div>
+                <div class="feature-enhanced">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Affordable Fees</h3>
+                    <p>Quality education at reasonable prices with EMI options available.</p>
+                </div>
+                <div class="feature-enhanced">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification</h3>
+                    <p>Government recognized certificates that are accepted worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Trainers -->
+    <section class="trainers-showcase">
+        <div class="container">
+            <h2 class="section-title">Meet Our <span>Expert Trainers</span></h2>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Trainer">
+                    </div>
+                    <h3>Rajesh Kumar</h3>
+                    <p class="trainer-title">Senior IT Trainer</p>
+                    <p class="trainer-exp">10+ years experience</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Trainer">
+                    </div>
+                    <h3>Priya Sharma</h3>
+                    <p class="trainer-title">Digital Marketing Expert</p>
+                    <p class="trainer-exp">8+ years experience</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Trainer">
+                    </div>
+                    <h3>Amit Verma</h3>
+                    <p class="trainer-title">Programming Expert</p>
+                    <p class="trainer-exp">12+ years experience</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Trainer">
+                    </div>
+                    <h3>Neha Gupta</h3>
+                    <p class="trainer-title">Language Expert</p>
+                    <p class="trainer-exp">7+ years experience</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-enhanced">
+        <div class="container">
+            <h2 class="section-title">What Our <span>Students Say</span></h2>
+            <div class="testimonials-enhanced-grid">
+                <div class="testimonial-enhanced">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I completed my Digital Marketing course from Learnatic Institute. The trainers are very supportive and the practical training helped me get a job in a top marketing agency."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Student">
+                        <div>
+                            <h4>Vikram Singh</h4>
+                            <p>Digital Marketing (2025 Batch)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-enhanced">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The English speaking course changed my life. I used to be shy speaking English, but now I confidently speak with clients. Thank you Learnatic!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Student">
+                        <div>
+                            <h4>Pooja Patel</h4>
+                            <p>English Language (2025 Batch)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-enhanced">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I learned Web Development from here and now I work as a freelance developer. The course curriculum is up-to-date and very practical."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Student">
+                        <div>
+                            <h4>Shan Rizvi</h4>
+                            <p>Web Development (2024 Batch)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-enhanced">
+        <div class="container">
+            <div class="cta-enhanced-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Join thousands of successful students who have transformed their careers with us.</p>
+                <div class="cta-buttons">
+                    <a href="courses.html" class="cta-btn-primary">View Courses</a>
+                    <a href="admission.html" class="cta-btn-secondary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>About Institute</h3>
+                <p>Learnatic Institute provides quality computer and language education since 2010. We have trained 5000+ successful students.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="courses/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="courses/ecommerce.html">E-commerce</a></li>
+                    <li><a href="courses/trading.html">Trading</a></li>
+                    <li><a href="courses/web-development.html">Web Development</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@learnatic.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Learnatic Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

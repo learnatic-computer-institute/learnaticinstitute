@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses - Learnatic Institute</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Courses Page CSS -->
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+<div class="top-announcement">
+    <div class="announcement-container">
+        <div class="announcement-content">
+            <i class="fas fa-bullhorn"></i>
+            <div class="announcement-text">
+                <span class="announcement-item">🎓 New Batch Starting Soon - Enroll Now & Get 20% Discount!</span>
+                <span class="announcement-item">📚 Free Demo Classes Available - Book Your Seat Today!</span>
+                <span class="announcement-item">🏆 5000+ Students Placed in Top Companies</span>
+                <span class="announcement-item">⏰ Early Bird Offer: Valid Till 31st March 2026</span>
+                <span class="announcement-item">💻 New Course: Data Science with AI - Limited Seats!</span>
+                <span class="announcement-item">🌍 English Speaking Batch Starting Every Monday</span>
+            </div>
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+    </div>
+</div>
+    <!-- Navbar (same as index.html) -->
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Learnatic Institute</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="index.html#admissions">Admissions</a></li>
+                <li><a href="index.html#trainers">Trainers</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#enroll" class="enroll-btn">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Computer Courses</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> 
+                <span>Courses</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Course Buttons - Horizontal Scroll -->
+    <section class="quick-courses-section">
+        <div class="container">
+            <h2 class="section-subtitle">Browse Courses by Category</h2>
+            <div class="quick-courses-wrapper">
+                <button class="quick-course-btn active">All Courses</button>
+                <button class="quick-course-btn">Digital Marketing</button>
+                <button class="quick-course-btn">Programming</button>
+                <button class="quick-course-btn">Accounting</button>
+                <button class="quick-course-btn">Auto CAD</button>
+                <button class="quick-course-btn">Office Automation</button>
+                <button class="quick-course-btn">Data Science</button>
+                <button class="quick-course-btn">Motion Graphics</button>
+                <button class="quick-course-btn">Web Development</button>
+                <button class="quick-course-btn">Graphics Design</button>
+                <button class="quick-course-btn">E-Commerce</button>
+                <button class="quick-course-btn">Advance IT</button>
+                <button class="quick-course-btn">Trading</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Title -->
+    <section class="section-title-wrapper">
+        <div class="container">
+            <h2 class="main-title">Explore Our <span>Professional Courses</span></h2>
+            <p class="subtitle">Choose from our wide range of professional courses designed for your success</p>
+        </div>
+    </section>
+
+    <!-- Courses Grid - 3 Cards per Row -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-grid grid-3">
+                
+                <!-- Course Card 1 - Digital Marketing -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/digital-marketing-concept_23-2148748772.jpg" alt="Digital Marketing">
+                        <span class="course-badge">Popular</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Marketing Course</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 6 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner to Advanced</span>
+                        </div>
+                        <p class="course-description">
+                            Learn SEO, Social Media, Google Ads & Content Strategies. Become industry-ready with practical projects & certification.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/digital-marketing.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 - Programming -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg" alt="Programming">
+                        <span class="course-badge">New</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Programming Language</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 1 Year</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner to Advanced</span>
+                        </div>
+                        <p class="course-description">
+                            Learn Python, C++, Java. Write clean code, solve problems & build real-world applications.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/programming.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 - Accounting -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/accounting-concept-illustration_114360-1742.jpg" alt="Accounting">
+                    </div>
+                    <div class="course-content">
+                        <h3>Computerised Accounting</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 4 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <p class="course-description">
+                            Learn Peachtree, QuickBooks, bookkeeping & financial reporting. Become job-ready with practical training.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/accounting.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 - Auto CAD -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/architect-drawing-concept_1284-12583.jpg" alt="Auto CAD">
+                    </div>
+                    <div class="course-content">
+                        <h3>Auto CAD</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 3 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <p class="course-description">
+                            Master 2D & 3D drawing skills. Civil, Mechanical & Electrical drafting with practical projects.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/autocad.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 - Office Automation -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/office-concept-illustration_114360-1472.jpg" alt="Office Automation">
+                    </div>
+                    <div class="course-content">
+                        <h3>Office Automation</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 3 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <p class="course-description">
+                            Word, Excel, PowerPoint & Outlook. Master modern workplace skills.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/office-automation.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 - Data Science -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/data-analysis-concept_23-2148419319.jpg" alt="Data Science">
+                        <span class="course-badge">Trending</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science with AI</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 6 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <p class="course-description">
+                            Python, Machine Learning, Data Analysis & Visualization. Hands-on projects & certification.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/data-science.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 7 - Motion Graphics -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/video-editing-concept_23-2148510286.jpg" alt="Motion Graphics">
+                    </div>
+                    <div class="course-content">
+                        <h3>Motion Graphics</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 4 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <p class="course-description">
+                            Create stunning animations & visual effects. Master professional tools.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/motion-graphics.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 8 - Web Development -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg" alt="Web Development">
+                        <span class="course-badge">Popular</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Web Development</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 6 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner to Advanced</span>
+                        </div>
+                        <p class="course-description">
+                            HTML, CSS, JavaScript, React & backend. Build real websites & launch your tech career.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/web-development.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 9 - Graphics Design -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/graphic-designer-workplace_23-2148170604.jpg" alt="Graphics Design">
+                    </div>
+                    <div class="course-content">
+                        <h3>Graphics Design</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 6 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <p class="course-description">
+                            Photoshop, Illustrator, CorelDRAW. Portfolio building & job support.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/graphic-design.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 10 - E-Commerce -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/ecommerce-web-page-concept_52683-25658.jpg" alt="E-Commerce">
+                    </div>
+                    <div class="course-content">
+                        <h3>E-Commerce</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 6 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <p class="course-description">
+                            Amazon, Shopify, Fiverr & Upwork. Build stores & earn online.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/ecommerce.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 11 - Advance IT -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/artificial-intelligence-concept_23-2148515112.jpg" alt="Advance IT">
+                    </div>
+                    <div class="course-content">
+                        <h3>Advance IT with AI</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 18 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <p class="course-description">
+                            System administration, troubleshooting & AI automation workflows.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/advance-it.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 12 - Trading -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://img.freepik.com/free-vector/trading-concept-illustration_114360-1557.jpg" alt="Trading">
+                    </div>
+                    <div class="course-content">
+                        <h3>Online Trading</h3>
+                        <div class="course-meta">
+                            <span class="duration"><i class="far fa-clock"></i> 6 Months</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <p class="course-description">
+                            Crypto, Forex, PSX. Technical & fundamental analysis.
+                        </p>
+                        <div class="course-footer">
+                            <a href="courses/trading.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Your Learning Journey Today</h2>
+                <p>Limited seats available • Expert-led courses • 100% Placement Assistance</p>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-video"></i>
+                        <span>Live Online Classes</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-building"></i>
+                        <span>On-Campus Classes</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Available</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Hands-on real-world projects</span>
+                    </div>
+                </div>
+
+                <a href="#enroll" class="cta-button">Enroll Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>About Institute</h3>
+                <p>Learnatic Institute provides quality computer and language education since 2010. We have trained 5000+ successful students.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="courses/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="courses/ecommerce.html">E-commerce</a></li>
+                    <li><a href="courses/trading.html">Trading</a></li>
+                    <li><a href="courses/web-development.html">Web Development</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@learnatic.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Learnatic Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
